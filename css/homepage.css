@@ -31,9 +31,10 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .work {
-    width: 50px;
-    height: 50px;
+    width: 47px;
+    height: 47px;
     display: flex;
     justify-content: center;
 }
@@ -48,3 +49,45 @@ body {
     justify-content: center;
 }
 
+
+@media only screen and (max-width: 896px) {
+
+
+    [class*="header"] {
+        padding-left: 230px;
+        display: flex;
+        position: fixed;
+    }
+
+    [class*="about"] {
+        padding-top: 80px;
+        display: flex;
+        padding-right: 50px;
+    }
+
+    [class*="shop"] {
+        padding-top: 80px;
+        display: flex;
+        padding-right: 70px;
+    }
+
+    [class*="commissions"] {
+        padding-top: 80px;
+        display: flex;
+        padding-right: 70px;
+    }
+
+    [class*="work"] {
+        padding-top: 80px;
+        display: flex;
+        padding-right: 70px;
+    }
+
+    [class*="video"] {
+        padding-left: 130px;
+    }
+
+    #linkcontainer {
+        justify-content: space-between;
+    }
+}
