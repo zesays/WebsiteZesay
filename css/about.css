@@ -1,0 +1,13 @@
+body {
+    background-color: #e3e3e3;
+    overflow: hidden;
+    /* Hide scrollbars */
+}
+
+.header {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content:auto center;
+    padding-left: 35%;
+}

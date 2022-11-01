@@ -1,0 +1,50 @@
+body {
+    background-color: #e3e3e3;
+    overflow: hidden;
+    /* Hide scrollbars */
+}
+
+.header {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.shop {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.commissions {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.work {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#linkcontainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
