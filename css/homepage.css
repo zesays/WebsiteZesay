@@ -1,93 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+
 body {
     background-color: #e3e3e3;
     overflow: hidden;
+    font-family: 'Poor Story', cursive;
     /* Hide scrollbars */
 }
 
 .header {
-    width: 100px;
-    height: 100px;
     display: flex;
     justify-content: center;
 }
 
-.about {
+.header img {
+    width: 400px;
+}
+
+.about, .commissions, .shop, .work {
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
+    font-size: 2rem;
+    z-index: 2;
 }
 
-.shop {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-.commissions {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-.work {
-    width: 47px;
-    height: 47px;
-    display: flex;
-    justify-content: center;
-}
 
 #linkcontainer {
     display: flex;
     justify-content: space-evenly;
 }
 
-.video {
+#videotje {
     display: flex;
     justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+a  {
+    text-decoration: none;
+    color: black;
+    transition: all 500ms ease-in;
+}
+
+a:hover {
+color: rgb(97, 157, 197);
+text-decoration: underline;
+}
+
+a:active {
+    color: rgb(97, 157, 197);
+    text-decoration: underline;
+    }
+
+@media only screen and (max-width: 414px) {
+
+
+    .header {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .about,
+    .shop,
+    .work,
+    .commissions {
+        display: block;
+        font-size: 2rem;
 }
 
 
-@media only screen and (max-width: 896px) {
 
+    #videotje {
+        justify-content: center;
 
-    [class*="header"] {
-        padding-left: 230px;
-        display: flex;
-        position: fixed;
-    }
-
-    [class*="about"] {
-        padding-top: 80px;
-        display: flex;
-        padding-right: 50px;
-    }
-
-    [class*="shop"] {
-        padding-top: 80px;
-        display: flex;
-        padding-right: 70px;
-    }
-
-    [class*="commissions"] {
-        padding-top: 80px;
-        display: flex;
-        padding-right: 70px;
-    }
-
-    [class*="work"] {
-        padding-top: 80px;
-        display: flex;
-        padding-right: 70px;
-    }
-
-    [class*="video"] {
-        padding-left: 130px;
     }
 
     #linkcontainer {
-        justify-content: space-between;
+        display: block;
+        position: absolute;
+        top: 200px;
+        left: 40%;
+    }
+
+    .header img {
+        width: 100%;
     }
 }
