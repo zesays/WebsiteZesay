@@ -7,9 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShopZ</title>
   <link rel="stylesheet" href="css/shop2.css">
+  <script defer src="shop.js"></script>
 </head>
 
 <body>
+
+ 
   <!-- NAVBAR -->
   <div class='navbar'>
     <div class='logo'>Zesay Shop</div>
@@ -19,9 +22,8 @@
     </div>
     <div class='cart-container'>
       <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-      <div class='cart-desc'>0 items</div>
+      <div id='cart-desc'>0 items</div>
     </div>
-
   </div>
 
   <!-- INFO BAR -->
@@ -66,11 +68,13 @@
           3D sculpture
         </div>
         <div class="product">
+          <a href="file:///C:/Users/Gebruiker/Desktop/website%20zesay!/productpg.html" target="_blank">
           <img src="assets/fotos/shop/toso.png" />
+          </a>
         </div>
         <div class='cta'>
           <div class="price">€35</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="Toso1">Add to cart</button>
         </div>
       </div>
 
@@ -86,7 +90,7 @@
         </div>
         <div class='cta'>
           <div class="price">€35</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="kit1">Add to cart</button>
         </div>
       </div>
 
@@ -98,11 +102,13 @@
          Toso stickers
         </div>
         <div class="product">
+          <a href="file:///C:/Users/Gebruiker/Desktop/website%20zesay!/productpagina/productpg.html#" target="_blank">
           <img src="assets/fotos/shop/stickers toso.jpg" />
+            </a>
         </div>
         <div class='cta'>
           <div class="price">€5</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="toso2">Add to cart</button>
         </div>
       </div>
 
@@ -118,7 +124,7 @@
         </div>
         <div class='cta'>
           <div class="price">€10</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="banaan1">Add to cart</button>
         </div>
       </div>
 
@@ -134,7 +140,7 @@
         </div>
         <div class='cta'>
           <div class="price">€7,50</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="star">Add to cart</button>
         </div>
       </div>
 
@@ -150,7 +156,7 @@
         </div>
         <div class='cta'>
           <div class="price">€10</div>
-          <button class="button">Add to cart</button>
+          <button class="kitmerah" data-webshop-product="Toso">Add to cart</button>
         </div>
       </div>
 
@@ -166,7 +172,7 @@
         </div>
         <div class='cta'>
           <div class="price">€40</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="uxo1">Add to cart</button>
         </div>
       </div>
 
@@ -182,7 +188,7 @@
         </div>
         <div class='cta'>
           <div class="price">€40</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="Toso3">Add to cart</button>
         </div>
       </div>
 
@@ -198,7 +204,7 @@
         </div>
         <div class='cta'>
           <div class="price">€15</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="scifi">Add to cart</button>
         </div>
       </div>
 
@@ -214,7 +220,7 @@
         </div>
         <div class='cta'>
           <div class="price">€55</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="lky1">Add to cart</button>
         </div>
       </div>
 
@@ -230,7 +236,7 @@
         </div>
         <div class='cta'>
           <div class="price">€55</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="mask1">Add to cart</button>
         </div>
       </div>
 
@@ -246,7 +252,7 @@
         </div>
         <div class='cta'>
           <div class="price">€15</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="Gila1">Add to cart</button>
         </div>
       </div>
 
@@ -262,7 +268,7 @@
         </div>
         <div class='cta'>
           <div class="price">€35</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="game1">Add to cart</button>
         </div>
       </div>
 
@@ -278,7 +284,7 @@
         </div>
         <div class='cta'>
           <div class="price">€10</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="world1">Add to cart</button>
         </div>
       </div>
 
@@ -294,7 +300,7 @@
         </div>
         <div class='cta'>
           <div class="price">€10</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="headset1">Add to cart</button>
         </div>
       </div>
 
@@ -310,7 +316,7 @@
         </div>
         <div class='cta'>
           <div class="price">€10</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="eye1">Add to cart</button>
         </div>
       </div>
 
@@ -326,7 +332,7 @@
         </div>
         <div class='cta'>
           <div class="price">€10</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="Dej1">Add to cart</button>
         </div>
       </div>
 
@@ -342,7 +348,7 @@
         </div>
         <div class='cta'>
           <div class="price">€60</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="kuni1">Add to cart</button>
         </div>
       </div>
 
@@ -358,7 +364,7 @@
         </div>
         <div class='cta'>
           <div class="price">€55</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="Beau">Add to cart</button>
         </div>
       </div>
 
@@ -374,7 +380,7 @@
         </div>
         <div class='cta'>
           <div class="price">€10</div>
-          <button class="button">Add to cart</button>
+          <button class="button" data-webshop-product="Zesay1">Add to cart</button>
         </div>
       </div>
 
@@ -388,11 +394,6 @@
     <div>asdasdas asd as </div>
   </div>
   
-  <script
-  src="https://code.jquery.com/jquery-3.6.1.min.js"
-  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-  crossorigin="anonymous"></script>
-<script src="shop.js"></script>
 </body>
 
 </html>

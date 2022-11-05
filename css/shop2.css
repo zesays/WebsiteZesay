@@ -44,7 +44,7 @@ body {
   cursor: pointer;
 }
 
-.cart-desc {
+#cart-desc {
   margin-left: 10px;
   font-size: 13px;
 }
@@ -193,6 +193,7 @@ body {
   margin-left: 20px;
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 .shop-card {
@@ -232,6 +233,7 @@ body {
 
 .product img {
   width: 100%;
+  border-style: dotted;
 }
 
 .cta {
