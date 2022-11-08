@@ -19,6 +19,7 @@
     <div class='account-container'>
       <i class="fa fa-user" aria-hidden="true"></i>
       <div class='cart-desc'><img src="assets/fotos/zsylogo.png" class="logoshop"></div>
+      <div class='cart-desc' id="shoppingCart"><img src="assets/fotos/shop/cart.png" class="wagentje"></div>
     </div>
     <div class='cart-container'>
       <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -68,13 +69,13 @@
           3D sculpture
         </div>
         <div class="product">
-          <a href="file:///C:/Users/Gebruiker/Desktop/website%20zesay!/productpg.html" target="_blank">
+          <a href="productpg.html" target="_blank">
           <img src="assets/fotos/shop/toso.png" />
           </a>
         </div>
         <div class='cta'>
           <div class="price">€35</div>
-          <button class="button" data-webshop-product="Toso1">Add to cart</button>
+          <button class="button" onClick="addItems(this)" data-webshop-product="Toso1">Add to cart</button>
         </div>
       </div>
 
@@ -90,7 +91,7 @@
         </div>
         <div class='cta'>
           <div class="price">€35</div>
-          <button class="button" data-webshop-product="kit1">Add to cart</button>
+          <button class="button" onClick="addItems(this)" data-webshop-product="kit1">Add to cart</button>
         </div>
       </div>
 
@@ -156,7 +157,7 @@
         </div>
         <div class='cta'>
           <div class="price">€10</div>
-          <button class="kitmerah" data-webshop-product="Toso">Add to cart</button>
+          <button class="button" data-webshop-product="kitmerah">Add to cart</button>
         </div>
       </div>
 
@@ -387,13 +388,22 @@
     </div>
   </div>
 
-  <div class='modal'>
-    <div>asdasdas asd as </div>
-    <div>asdasdas asd as </div>
-    <div>asdasdas asd as </div>
-    <div>asdasdas asd as </div>
+
+<button id="myBtn">Open Modal</button>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Shopping cart</p>
+    <img id="modallore" src="assets/fotos/shop/cart.png">
+    <p id="cartList">items zijn leeg</p>
   </div>
+</div>
   
+
+  
+
+
+
 </body>
 
 </html>
