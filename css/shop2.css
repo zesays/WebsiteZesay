@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 
 body {
-  height: 100%;
-  width: 100vw;
+  /* height: 100%;
+  width: 100vw; */
   margin: 0;
   /*   background: -webkit-radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%); */
   background-image: url("/assets/fotos/shop/backrgound.jpg");
@@ -333,7 +333,7 @@ body {
 .modal h2 {
   justify-content: center;
   font-family: 'Poor Story', cursive;
-  font-size: 50px;
+  font-size: 100px;
 }
 
 #cartList {
@@ -350,7 +350,7 @@ body {
 }
 
 #checkout {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 900;
   text-transform: uppercase;
   color: #28406b;
@@ -366,12 +366,12 @@ body {
   display: flex;
   margin-left: 800px;
 }
-
+/* 
 #pisancart {
   height: 12rem;
   display: flex;
   justify-content: center;
-}
+} */
 
 .close {
   color: #aaa;

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.6">
   <title>ShopZ</title>
   <link rel="stylesheet" href="css/shop2.css">
   <script defer src="shop.js"></script>
@@ -23,7 +23,7 @@
     </div>
     <div class='cart-container'>
       <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-      <div id='cart-desc'>0 items</div>
+      <div id='cart-desc'></div>
     </div>
   </div>
 
@@ -394,10 +394,13 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h1>Shopping cart</h1>
-    <img id="pisancart" src="assets/fotos/shop/pisan.png">    
+    <h2 id="cartList">Shopping cart is empty</h2>
+    <!-- <img id="pisancart" src="assets/fotos/shop/pisan.png">     -->
     <img id="modallore" src="assets/fotos/shop/cart.png">
-    <h2 id="cartList">items zijn leeg</h2>
-    <button id="checkout">Checkout</button>
+    <!-- <button id="checkout">Checkout</button> -->
+    <button id="checkout" onclick="window.location.href='cart.html?product=Toso'">
+      Checkout
+    </button>
   </div>
 </div>
   

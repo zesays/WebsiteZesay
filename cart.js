@@ -3,6 +3,10 @@ var promoCode;
 var promoPrice;
 var fadeTime = 300;
 
+let params = (new URL(document.location)).searchParams;
+let product = params.get("product");
+alert(product)
+
 /* Assign actions */
 $(".quantity input").change(function () {
   updateQuantity(this);
