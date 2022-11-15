@@ -337,7 +337,15 @@ body {
 }
 
 #cartList {
-  font-size: 2rem;
+  font-size: 4rem;
+  display: flex;
+  margin-right: 20rem;
+  margin-top: 150px;
+  font-weight: lighter;
+}
+
+#ItemPriceDiv {
+  font-size: 3rem;
   display: flex;
   margin-left: 20rem;
   margin-bottom: 150px;
@@ -365,6 +373,12 @@ body {
   border-radius: 20px;
   display: flex;
   margin-left: 800px;
+}
+
+#checkout:hover {
+  background: linear-gradient(135deg, #3d61a1, #28406b);
+  color: #fff;
+  border: none;
 }
 /* 
 #pisancart {

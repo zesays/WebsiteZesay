@@ -43,9 +43,12 @@ window.onclick = function(event) {
 }
 
 const cartList = document.getElementById("cartList")
+const ItemPriceDiv = document.getElementById("ItemPriceDiv")
 
 function addItems(e){
   localStorage.setItem("CartItem",e.getAttribute("data-webshop-product"))
   modal.style.display = "block";
   cartList.innerHTML = localStorage.getItem("CartItem")
+  localStorage.setItem("ItemPrice",e.getAttribute("data-webshop-price"))
+  ItemPriceDiv.innerHTML = localStorage.getItem("ItemPrice")
 }

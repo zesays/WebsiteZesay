@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 
 html,
 html a {
@@ -9,10 +10,10 @@ html a {
 }
 
 body {
-    background-color: #cccccc;
+  background-color: #cccccc;
   color: #666;
   font-family: "Open Sans", sans-serif;
-  font-size: 62.5%;
+  font-size: 82.5%;
   margin: 0 auto;
 }
 
@@ -66,21 +67,23 @@ button,
 .basket-module,
 .basket-labels,
 .item,
-.price,
+#price,
 .quantity,
 .subtotal,
+#productPrijs,
 .basket-product,
 .product-image,
 .product-details {
   float: left;
+  font-family: 'Poor Story', cursive;
 }
 
-.price:before,
+#price:before,
 .subtotal:before,
 .subtotal-value:before,
 .total-value:before,
 .promo-value:before {
-  content: "£";
+  content: "€";
 }
 
 .hide {
@@ -159,7 +162,7 @@ li {
   padding: 0.625rem 0;
 }
 
-li.price:before,
+li#price:before,
 li.subtotal:before {
   content: "";
 }
@@ -168,8 +171,9 @@ li.subtotal:before {
   width: 55%;
 }
 
-.price,
+#price,
 .quantity,
+#productPrijs,
 .subtotal {
   width: 15%;
 }
@@ -179,11 +183,6 @@ li.subtotal:before {
 }
 
 .remove {
-  bottom: 1.125rem;
-  float: right;
-  position: absolute;
-  right: 0;
-  text-align: right;
   width: 45%;
 }
 
@@ -210,6 +209,7 @@ li.subtotal:before {
 
 .product-image {
   width: 35%;
+  height: 15%;
 }
 
 .product-details {
@@ -243,14 +243,15 @@ aside {
 }
 
 .summary {
-  background-color: #eee;
-  border: 1px solid #aaa;
+  background-color: rgb(230, 199, 228);
+  border: 3px solid rgb(87, 89, 97);
   padding: 1rem;
   position: fixed;
   width: 250px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: 'Poor Story', cursive;
 }
 
 .summary-total-items {
@@ -338,6 +339,7 @@ aside {
 }
 
 @media screen and (max-width: 640px) {
+
   aside,
   .basket,
   .summary,
@@ -345,41 +347,58 @@ aside {
   .remove {
     width: 100%;
   }
+
   .basket-labels {
     display: none;
   }
+
   .basket-module {
     margin-bottom: 1rem;
   }
+
   .item {
     margin-bottom: 1rem;
   }
+
   .product-image {
     width: 40%;
+    height: 15%;
   }
+
   .product-details {
     width: 60%;
   }
-  .price,
+
+  #price,
   .subtotal {
     width: 33%;
   }
+
   .quantity {
     text-align: center;
     width: 34%;
   }
+
   .quantity-field {
     float: none;
   }
+
+#productPrijs {
+  text-align: center;
+  width: 34%;
+}
+
   .remove {
     bottom: 0;
     text-align: left;
     margin-top: 0.75rem;
     position: relative;
   }
+
   .remove button {
     padding: 0;
   }
+
   .shipping {
     margin-top: 1.25rem;
     position: relative;
@@ -390,6 +409,7 @@ aside {
   aside {
     padding: 0 1rem 0 0;
   }
+
   .summary {
     width: 28%;
   }
@@ -399,6 +419,7 @@ aside {
   main {
     width: 100%;
   }
+
   .product-details {
     padding: 0 1rem;
   }
