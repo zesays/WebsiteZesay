@@ -354,7 +354,6 @@ body {
 #modallore {
   height: 12rem;
   display: flex;
-  margin-left: 800px;
 }
 
 #checkout {
@@ -372,7 +371,6 @@ body {
   border: 1px solid #28406b;
   border-radius: 20px;
   display: flex;
-  margin-left: 800px;
 }
 
 #checkout:hover {
@@ -404,8 +402,13 @@ body {
 @media only screen and (max-width: 414px) {
 
 
-  #modallore {
+  /* #modallore {
     margin-left: 80px;
   }
+
+  #checkout {
+    font-size: 100%;
+
+  } */
 
 }
