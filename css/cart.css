@@ -246,7 +246,6 @@ aside {
   background-color: rgb(230, 199, 228);
   border: 3px solid rgb(87, 89, 97);
   padding: 1rem;
-  position: fixed;
   width: 250px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -338,7 +337,11 @@ aside {
   width: 100%;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 414px) {
+
+  body {
+    width: 50%;
+  }
 
   aside,
   .basket,
@@ -383,10 +386,10 @@ aside {
     float: none;
   }
 
-#productPrijs {
-  text-align: center;
-  width: 34%;
-}
+  #productPrijs {
+    text-align: center;
+    width: 34%;
+  }
 
   .remove {
     bottom: 0;
@@ -403,21 +406,32 @@ aside {
     margin-top: 1.25rem;
     position: relative;
   }
-}
 
-@media screen and (min-width: 641px) and (max-width: 960px) {
   aside {
-    padding: 0 1rem 0 0;
+    display: flex;
   }
 
   .summary {
-    width: 28%;
+    width: 50%;
+    font-size: 3rem;
   }
-}
 
-@media screen and (max-width: 960px) {
-  main {
-    width: 100%;
+  .basket-labels {
+   
+  }
+
+  .basket-product,
+  #productnaam {
+    font-size: 2rem;
+  }
+
+  .quantity-field,
+  .basket-module,
+  .summary-total-items,
+  .checkout-cta,
+  .remove button,
+  .promo-code-cta {
+    font-size: 1, 7rem;
   }
 
   .product-details {
