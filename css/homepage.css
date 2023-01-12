@@ -17,7 +17,10 @@ body {
     width: 400px;
 }
 
-.about, .commissions, .shop, .work {
+.about,
+.commissions,
+.shop,
+.work {
     width: 50px;
     height: 50px;
     display: flex;
@@ -39,21 +42,21 @@ body {
     margin: 0 auto;
 }
 
-a  {
+a {
     text-decoration: none;
     color: black;
     transition: all 500ms ease-in;
 }
 
 a:hover {
-color: rgb(97, 157, 197);
-text-decoration: underline;
+    color: rgb(97, 157, 197);
+    text-decoration: underline;
 }
 
 a:active {
     color: rgb(97, 157, 197);
     text-decoration: underline;
-    }
+}
 
 @media only screen and (max-width: 414px) {
 
@@ -70,7 +73,7 @@ a:active {
     .commissions {
         display: block;
         font-size: 2rem;
-}
+    }
 
 
 
@@ -89,4 +92,5 @@ a:active {
     .header img {
         width: 100%;
     }
+
 }
