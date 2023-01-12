@@ -368,6 +368,10 @@ aside {
     height: 15%;
   }
 
+  .promo-code-field {
+    width: 20%;
+  }
+
   .product-details {
     width: 60%;
   }
@@ -384,10 +388,11 @@ aside {
 
   .quantity-field {
     float: none;
+    text-align: left;
   }
 
   #productPrijs {
-    text-align: center;
+    text-align: left;
     width: 34%;
   }
 
@@ -416,6 +421,7 @@ aside {
     font-size: 2rem;
   }
 
+
   .basket-labels {
    
   }
@@ -431,7 +437,7 @@ aside {
   .checkout-cta,
   .remove button,
   .promo-code-cta {
-    font-size: 1, 7rem;
+    font-size: 2rem;
   }
 
   .product-details {
